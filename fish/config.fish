@@ -10,4 +10,8 @@ export BAT_THEME="catppuccin"
 export EDITOR="nvim"
 export VISUAL="nvim"
 
+alias v="nvim"
+alias ls="exa"
+alias bat="batcat"
+
 starship init fish | source
