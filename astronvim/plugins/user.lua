@@ -38,4 +38,8 @@ return {
             fps = 60,
         },
     },
+    {
+        "m4xshen/hardtime.nvim",
+        opts = {}
+    }
 }
