@@ -1,3 +1,5 @@
+local utils = require("astronvim.utils")
+
 return {
     {
         "folke/todo-comments.nvim",
@@ -40,6 +42,19 @@ return {
     },
     {
         "m4xshen/hardtime.nvim",
-        opts = {}
-    }
+        opts = {},
+    },
+    {
+        "nvim-treesitter/nvim-treesitter",
+        opts = {
+            ensure_installed = "sql",
+        },
+    },
+    {
+        "williamboman/mason-lspconfig.nvim",
+        opts = function(_, opts)
+            opts.ensure_installed =
+                utils.list_insert_unique(opts.ensure_installed, "sqlls")
+        end,
+    },
 }

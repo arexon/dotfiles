@@ -17,6 +17,7 @@ return {
         underline = true,
     },
     lsp = {
+        servers = { "sqlls" },
         formatting = {
             format_on_save = {
                 enabled = true,
@@ -33,9 +34,9 @@ return {
                             command = "clippy",
                         },
                     },
-                }
-            }
-        }
+                },
+            },
+        },
     },
     lazy = {
         defaults = { lazy = true },

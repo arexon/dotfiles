@@ -12,7 +12,7 @@ return {
     { import = "astrocommunity.bars-and-lines.scope-nvim" },
 
     { import = "astrocommunity.diagnostics.trouble-nvim" },
-    { import = "astrocommunity.editing-support.nvim-ts-rainbow2" },
+    { import = "astrocommunity.editing-support.rainbow-delimiters-nvim" },
     { import = "astrocommunity.editing-support.todo-comments-nvim" },
 
     { import = "astrocommunity.motion.nvim-surround" },
@@ -25,8 +25,7 @@ return {
     { import = "astrocommunity.pack.lua" },
     { import = "astrocommunity.pack.astro" },
     { import = "astrocommunity.pack.json" },
-
-    { import = "astrocommunity.project.neoconf-nvim" },
+    { import = "astrocommunity.pack.markdown" },
 
     { import = "astrocommunity.utility.noice-nvim" },
     {
