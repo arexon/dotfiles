@@ -61,4 +61,8 @@ return {
             opts.winbar = false
         end,
     },
+    {
+        "neovim-session-manager",
+        enabled = false,
+    },
 }

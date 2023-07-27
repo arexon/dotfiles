@@ -41,10 +41,6 @@ return {
         },
     },
     {
-        "m4xshen/hardtime.nvim",
-        opts = {},
-    },
-    {
         "nvim-treesitter/nvim-treesitter",
         opts = {
             ensure_installed = "sql",

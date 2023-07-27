@@ -14,9 +14,6 @@ return {
     { import = "astrocommunity.diagnostics.trouble-nvim" },
     { import = "astrocommunity.editing-support.rainbow-delimiters-nvim" },
     { import = "astrocommunity.editing-support.todo-comments-nvim" },
-
-    { import = "astrocommunity.motion.nvim-surround" },
-
     { import = "astrocommunity.completion.copilot-lua" },
     { import = "astrocommunity.completion.copilot-lua-cmp" },
 

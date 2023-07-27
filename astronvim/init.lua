@@ -3,7 +3,7 @@ return {
         remote = "origin",
         channel = "stable",
         version = "latest",
-        branch = "nightly",
+        branch = "main",
         commit = nil,
         pin_plugins = nil,
         skip_prompts = false,
