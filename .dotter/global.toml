@@ -1,6 +1,3 @@
-[astronvim.files]
-"astronvim/" = "~/.config/nvim/lua/user/"
-
 [bat.files]
 "bat/" = "~/.config/bat/"
 
@@ -13,3 +10,6 @@ hostname = ""
 
 [starship.files]
 "starship.toml" = "~/.config/starship.toml"
+
+[gitui.files]
+"gitui/" = "~/.config/gitui/"
