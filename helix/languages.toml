@@ -1,0 +1,30 @@
+[[language]]
+name = "rust"
+
+[[language]]
+name = "toml"
+formatter = { command = "taplo", args = ["fmt", "-"] }
+auto-format = true
+
+[[language]]
+name = "json"
+formatter = { command = "prettier", args = ["--parser", "json"] }
+
+[[language]]
+name = "javascript"
+shebangs = ["deno"]
+roots = ["deno.json", "deno.jsonc"]
+config = { enable = true, lint = true, unstable = true }
+language-server = { command = "deno", args = [
+  "lsp",
+], language-id = "javascript" }
+
+[[language]]
+name = "typescript"
+shebangs = ["deno"]
+auto-format = true
+roots = ["deno.json", "deno.jsonc"]
+config = { enable = true, lint = true, unstable = true }
+language-server = { command = "deno", args = [
+  "lsp",
+], language-id = "typescript" }
