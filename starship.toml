@@ -13,7 +13,7 @@ $character"""
 [character]
 success_symbol = "[❯](maroon)"
 error_symbol = "[❯](red)"
-vicmd_symbol = "[❮](green)"
+vimcmd_symbol = "[❮](green)"
 
 [directory]
 truncation_length = 4
