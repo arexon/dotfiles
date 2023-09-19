@@ -32,3 +32,4 @@ select = "underline"
 [keys.normal]
 C-s = ":w"
 C-q = ":bc"
+X = "extend_line_above"
