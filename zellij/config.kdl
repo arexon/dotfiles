@@ -1,0 +1,180 @@
+
+keybinds {
+    normal clear-defaults=true {
+        bind "Alt q" { Quit; }
+        bind "Alt d" { Detach; }
+        bind "Alt p" { SwitchToMode "pane"; }
+        bind "Alt r" { SwitchToMode "resize"; }
+        bind "Alt t" { SwitchToMode "tab"; }
+        bind "Alt s" { SwitchToMode "scroll"; }
+        bind "Alt m" { SwitchToMode "move"; }
+        bind "Alt n" { NewPane; }
+        bind "Alt h" { MoveFocusOrTab "Left"; }
+        bind "Alt l" { MoveFocusOrTab "Right"; }
+        bind "Alt j" { MoveFocus "Down"; }
+        bind "Alt k" { MoveFocus "Up"; }
+    }
+
+    pane clear-defaults=true {
+        bind "Enter" "Esc" { SwitchToMode "normal"; }
+        bind "h" { NewPane "Left"; }
+        bind "l" { NewPane "Right"; }
+        bind "j" { NewPane "Down"; }
+        bind "k" { NewPane "Up"; }
+        bind "Alt h" { MoveFocus "Left"; }
+        bind "Alt l" { MoveFocus "Right"; }
+        bind "Alt j" { MoveFocus "Down"; }
+        bind "Alt k" { MoveFocus "Up"; }
+        bind "p" { SwitchFocus; }
+        bind "n" { NewPane; }
+        bind "q" { CloseFocus; }
+        bind "f" { ToggleFocusFullscreen; }
+        bind "z" { TogglePaneFrames; }
+    }
+
+    tab clear-defaults=true {
+        bind "Enter" "Esc" { SwitchToMode "normal"; }
+        bind "h" "Left" { GoToPreviousTab; }
+        bind "l" "Right" { GoToNextTab; }
+        bind "n" { NewTab; }
+        bind "q" { CloseTab; }
+        bind "Alt h" { MoveFocus "Left"; }
+        bind "Alt l" { MoveFocus "Right"; }
+        bind "Alt j" { MoveFocus "Down"; }
+        bind "Alt k" { MoveFocus "Up"; }
+        bind "1" { GoToTab 1; }
+        bind "2" { GoToTab 2; }
+        bind "3" { GoToTab 3; }
+        bind "4" { GoToTab 4; }
+    }
+
+    resize clear-defaults=true {
+        bind "Enter" "Esc" { SwitchToMode "normal"; }
+        bind "h" { Resize "Left"; }
+        bind "j" { Resize "Down"; }
+        bind "k" { Resize "Up"; }
+        bind "l" { Resize "Right"; }
+        bind "Alt h" { MoveFocus "Left"; }
+        bind "Alt l" { MoveFocus "Right"; }
+        bind "Alt j" { MoveFocus "Down"; }
+        bind "Alt k" { MoveFocus "Up"; }
+    }
+
+    move clear-defaults=true {
+        bind "Enter" "Esc" { SwitchToMode "normal"; }
+        bind "h" { MovePane "Left"; }
+        bind "j" { MovePane "Down"; }
+        bind "k" { MovePane "Up"; }
+        bind "l" { MovePane "Right"; }
+        bind "Alt h" { MoveFocus "Left"; }
+        bind "Alt l" { MoveFocus "Right"; }
+        bind "Alt j" { MoveFocus "Down"; }
+        bind "Alt k" { MoveFocus "Up"; }
+    }
+
+    scroll clear-defaults=true {
+        bind "e" { EditScrollback; SwitchToMode "normal"; }
+        bind "Enter" "Esc" { SwitchToMode "normal"; }
+        bind "b" { ScrollToBottom; SwitchToMode "normal"; }
+        bind "j" { ScrollDown; }
+        bind "k" { ScrollUp; }
+        bind "l" { PageScrollDown; }
+        bind "h" { PageScrollUp; }
+        bind "d" { HalfPageScrollDown; }
+        bind "u" { HalfPageScrollUp; }
+        bind "Alt h" { MoveFocus "Left"; }
+        bind "Alt l" { MoveFocus "Right"; }
+        bind "Alt j" { MoveFocus "Down"; }
+        bind "Alt k" { MoveFocus "Up"; }
+        bind "s" { SwitchToMode "entersearch"; SearchInput 0; }
+    }
+
+    search clear-defaults=true {
+        bind "Enter" "Esc" { SwitchToMode "normal"; }
+        bind "s" { SwitchToMode "entersearch"; SearchInput 0; }
+        bind "n" { Search "Down"; }
+        bind "p" { Search "Up"; }
+        bind "c" { SearchToggleOption "CaseSensitivity"; }
+        bind "w" { SearchToggleOption "Wrap"; }
+        bind "o" { SearchToggleOption "WholeWord"; }
+        bind "Alt h" { MoveFocusOrTab "Left"; }
+        bind "Alt l" { MoveFocusOrTab "Right"; }
+        bind "Alt j" { MoveFocus "Down"; }
+        bind "Alt k" { MoveFocus "Up"; }
+    }
+
+    entersearch clear-defaults=true {
+        bind "Enter" { SwitchToMode "search"; }
+        bind "Esc" { SearchInput 27; SwitchToMode "scroll"; }
+        bind "Alt h" { MoveFocusOrTab "Left"; }
+        bind "Alt l" { MoveFocusOrTab "Right"; }
+        bind "Alt j" { MoveFocus "Down"; }
+        bind "Alt k" { MoveFocus "Up"; }
+    }
+
+    locked clear-defaults=true {}
+    renamepane clear-defaults=true {}
+    renametab clear-defaults=true {}
+    session clear-defaults=true {}
+    tmux clear-defaults=true {}
+}
+
+themes {
+    catppuccin_latte {
+        bg "#acb0be"
+        fg "#acb0be"
+        red "#d20f39"
+        green "#40a02b"
+        blue "#1e66f5"
+        yellow "#df8e1d"
+        magenta "#ea76cb"
+        orange "#fe640b"
+        cyan "#04a5e5"
+        black "#4c4f69"
+        white "#dce0e8"
+    }
+    catppuccin_frappe {
+        bg "#626880"
+        fg "#c6d0f5"
+        red "#e78284"
+        green "#a6d189"
+        blue "#8caaee"
+        yellow "#e5c890"
+        magenta "#f4b8e4"
+        orange "#ef9f76"
+        cyan "#99d1db"
+        black "#292c3c"
+        white "#c6d0f5"
+    }
+    catppuccin_macchiato {
+        bg "#5b6078"
+        fg "#cad3f5"
+        red "#ed8796"
+        green "#a6da95"
+        blue "#8aadf4"
+        yellow "#eed49f"
+        magenta "#f5bde6"
+        orange "#f5a97f"
+        cyan "#91d7e3"
+        black "#1e2030"
+        white "#cad3f5"
+    }
+    catppuccin_mocha {
+        bg "#585b70"
+        fg "#cdd6f4"
+        red "#f38ba8"
+        green "#a6e3a1"
+        blue "#89b4fa"
+        yellow "#f9e2af"
+        magenta "#f5c2e7"
+        orange "#fab387"
+        cyan "#89dceb"
+        black "#181825"
+        white "#cdd6f4"
+    }
+}
+
+theme "catppuccin_macchiato"
+simplified_ui true
+default_shell "fish"
+default_layout_dir "./layouts/"

@@ -16,3 +16,6 @@ hostname = ""
 
 [gitui.files]
 "gitui/" = "~/.config/gitui/"
+
+[zellij.files]
+"zellij/" = "~/.config/zellij/"
