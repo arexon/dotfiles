@@ -2,6 +2,7 @@ theme = "catppuccin_macchiato"
 
 [editor]
 bufferline = "always"
+line-number = "relative"
 true-color = true
 color-modes = true
 # auto-info = false

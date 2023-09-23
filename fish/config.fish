@@ -14,5 +14,6 @@ export VISUAL="hx"
 
 alias ls exa
 alias bat batcat
+alias zj zellij
 
 starship init fish | source
