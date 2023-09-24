@@ -1,4 +1,3 @@
-
 keybinds {
     normal clear-defaults=true {
         bind "Alt q" { Quit; }
@@ -171,6 +170,12 @@ themes {
         cyan "#89dceb"
         black "#181825"
         white "#cdd6f4"
+    }
+}
+
+ui {
+    pane_frames {
+        rounded_corners true
     }
 }
 
