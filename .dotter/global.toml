@@ -19,3 +19,6 @@ hostname = ""
 
 [zellij.files]
 "zellij/" = "~/.config/zellij/"
+
+[alacritty.files]
+"alacritty.toml" = "~/.config/alacritty/alacritty.toml"
