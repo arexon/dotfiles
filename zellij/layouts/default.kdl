@@ -9,7 +9,7 @@ layout {
 
                 hide_frame_for_single_pane "true"
 
-                mode_normal "#[fg=black,bg=blue,bold] {session} "
+                mode_normal "#[fg=black,bg=cyan,bold] {session} "
                 mode_pane "#[fg=black,bg=magenta,bold] {session} "
                 mode_tab "#[fg=black,bg=magenta,bold] {session} "
                 mode_resize "#[fg=black,bg=magenta,bold] {session} "
@@ -18,8 +18,8 @@ layout {
                 mode_search "#[fg=black,bg=magenta,bold] {session} "
                 mode_entersearch "#[fg=black,bg=magenta,bold] {session} "
 
-                tab_normal "#[fg=#6e738d] {name} "
-                tab_active "#[fg=#939ab7,bold,italic] {name} "
+                tab_normal "#[fg=white] {name} "
+                tab_active "#[fg=yellow,bold,italic] {name} "
             }
         }
     }
