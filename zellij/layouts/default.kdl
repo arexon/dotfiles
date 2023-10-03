@@ -24,7 +24,7 @@ layout {
         }
     }
     tab name="helix" focus=true {
-        pane command="hx"
+        pane command="helix"
     }
     tab name="terminal" {
         pane
