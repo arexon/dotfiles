@@ -1,19 +1,10 @@
-if status --is-interactive
-    keychain --quiet --nogui ~/.ssh/id_ed25519
-end
-source ~/.keychain/{{hostname}}-fish
+keychain --quiet ~/.ssh/id_ed25519 --host falcon
+source ~/.keychain/falcon-fish
 
-export PATH="$HOME/.cargo/bin:$PATH"
-export PATH="$HOME/.deno/bin:$PATH"
-export PATH="$HOME/.proto/bin:$PATH"
-fish_add_path ~/.proto/tools/node/globals/bin
-
-export BAT_THEME="catppuccin"
-export EDITOR="hx"
-export VISUAL="hx"
-
-alias ls exa
-alias bat batcat
+alias hx helix
 alias zj zellij
+
+set -x EDITOR helix
+set -g fish_greeting
 
 starship init fish | source

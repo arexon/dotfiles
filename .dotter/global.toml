@@ -7,10 +7,6 @@
 [fish.files]
 "fish/" = "~/.config/fish/"
 
-[fish.variables]
-# Set the machine name.
-hostname = ""
-
 [starship.files]
 "starship.toml" = "~/.config/starship.toml"
 
