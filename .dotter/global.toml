@@ -21,3 +21,6 @@
 
 [hyprland.files]
 "hypr/" = "~/.config/hypr/"
+
+[tofi.files]
+"tofi/" = "~/.config/tofi/"

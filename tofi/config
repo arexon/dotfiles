@@ -1,0 +1,25 @@
+font = IosevkaNerdFont
+font-size = 14
+
+text-color = #c1a78e
+selection-color = #ece1d7
+selection-match-color = #ebc06d
+input-color = #ebc06d
+placeholder-color = #867462
+
+prompt-text = ""
+placeholder-text = "Search..."
+
+width = 25%
+height = 50%
+background-color = #292522
+border-width = 1
+border-color = #c1a78e
+outline-width = 0
+corner-radius = 8
+padding-top = 0.5%
+padding-right = 0.5%
+padding-bottom = 0.5%
+padding-left = 0.5%
+
+matching-algorithm = fuzzy
