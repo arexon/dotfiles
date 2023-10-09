@@ -1,5 +1,12 @@
 [[language]]
 name = "rust"
+[language.config]
+checkOnSave = { command = "clippy" }
+
+[[language]]
+name = "lua"
+formatter = { command = "stylua", args = ["-"] }
+auto-format = true
 
 [[language]]
 name = "toml"
@@ -9,22 +16,20 @@ auto-format = true
 [[language]]
 name = "json"
 formatter = { command = "prettier", args = ["--parser", "json"] }
+indent = { tab-width = 4, unit = " " }
 
 [[language]]
-name = "javascript"
-shebangs = ["deno"]
-roots = ["deno.json", "deno.jsonc"]
-config = { enable = true, lint = true, unstable = true }
-language-server = { command = "deno", args = [
-  "lsp",
-], language-id = "javascript" }
-
-[[language]]
-name = "typescript"
-shebangs = ["deno"]
+name = "bash"
+indent = { tab-width = 4, unit = "\t" }
+formatter = { command = "shfmt" }
 auto-format = true
-roots = ["deno.json", "deno.jsonc"]
-config = { enable = true, lint = true, unstable = true }
-language-server = { command = "deno", args = [
-  "lsp",
-], language-id = "typescript" }
+
+[[language]]
+name = "fish"
+formatter = { command = "fish_indent" }
+auto-format = true
+
+[[language]]
+name = "css"
+formatter = { command = "prettier", args = ["--parser", "css"] }
+indent = { tab-width = 4, unit = " " }
