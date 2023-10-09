@@ -1,0 +1,100 @@
+@define-color bg #292522;
+@define-color float #34302c;
+@define-color sel #403a36;
+@define-color ui #867462;
+@define-color com #c1a78e;
+@define-color fg #ece1d7;
+
+@define-color light-red #d47766;
+@define-color light-yellow #ebc06d;
+@define-color light-green #85b695;
+@define-color light-cyan #89b3b6;
+@define-color light-blue #a3a9ce;
+@define-color light-magenta #cf9bc2;
+
+@define-color red #bd8183;
+@define-color yellow #e49b5d;
+@define-color green #78997a;
+@define-color cyan #7b9695;
+@define-color blue #7f91b2;
+@define-color magenta #b380b0;
+
+* {
+    border: none;
+    padding: 0;
+    margin: 0;
+    font-family: IosevkaNerdFont;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+button:hover {
+    box-shadow: none;
+    text-shadow: none;
+    background: none;
+    transition: none;
+}
+
+#waybar {
+    background: transparent;
+    color: @com;
+}
+
+tooltip {
+    background: @float;
+}
+tooltip label {
+    color: @com;
+}
+
+#clock,
+#workspaces,
+#tray,
+#pulseaudio,
+#temperature,
+#cpu {
+    padding: 0 8px;
+    border-radius: 8px;
+    background: @bg;
+}
+
+#clock {
+    color: @light-blue;
+    margin-right: 10px;
+}
+
+#pulseaudio {
+    color: @light-magenta;
+}
+
+#cpu {
+    color: @light-cyan;
+}
+
+#temperature {
+    color: @light-green;
+}
+
+#tray menu {
+    background: @float;
+    color: @com;
+    box-shadow: none;
+}
+
+#workspaces * {
+    font-size: 20px;
+}
+#workspaces button {
+    padding: 0 8px;
+    color: @ui;
+}
+#workspaces button.persistent {
+    color: @sel;
+}
+#workspaces button.active {
+    color: @light-cyan;
+}
+
+#waybar:not(.empty) #window {
+    background: @float;
+}

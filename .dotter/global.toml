@@ -16,5 +16,8 @@
 [alacritty.files]
 "alacritty.toml" = "~/.config/alacritty/alacritty.toml"
 
+[waybar.files]
+"waybar/" = "~/.config/waybar/"
+
 [hyprland.files]
 "hypr/" = "~/.config/hypr/"
