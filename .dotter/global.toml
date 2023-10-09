@@ -10,9 +10,6 @@
 [starship.files]
 "starship.toml" = "~/.config/starship.toml"
 
-[gitui.files]
-"gitui/" = "~/.config/gitui/"
-
 [zellij.files]
 "zellij/" = "~/.config/zellij/"
 
