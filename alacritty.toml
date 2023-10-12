@@ -1,23 +1,31 @@
+[shell]
+program = "/usr/bin/zellij"
+args = ["attach", "--create", "alacritty", "options", "--default-shell", "fish"]
+
 [mouse]
 hide_when_typing = true
 
 [font]
-size = 12.0
+size = 14.0
+
+[font.normal]
+family = "Iosevka NF"
 
 [font.bold]
-family = "JetBrains Mono"
+family = "Iosevka NF"
 style = "Bold"
 
 [font.bold_italic]
-family = "JetBrains Mono"
+family = "Iosevka NF"
 style = "BoldItalic"
 
 [font.italic]
-family = "JetBrains Mono"
+family = "Iosevka NF"
 style = "Italic"
 
-[font.normal]
-family = "JetBrains Mono"
+[colors.primary]
+background = "#292522"
+foreground = "#ece1d7"
 
 [colors.bright]
 black = "#867462"
@@ -38,7 +46,3 @@ magenta = "#b380b0"
 red = "#bd8183"
 white = "#c1a78e"
 yellow = "#e49b5d"
-
-[colors.primary]
-background = "#292522"
-foreground = "#ece1d7"
