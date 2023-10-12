@@ -52,7 +52,8 @@ tooltip label {
 #tray,
 #pulseaudio,
 #temperature,
-#cpu {
+#cpu,
+#custom-blue-light-filter {
     padding: 0 8px;
     border-radius: 8px;
     background: @bg;
@@ -68,11 +69,11 @@ tooltip label {
 }
 
 #cpu {
-    color: @light-cyan;
+    color: @light-blue;
 }
 
 #temperature {
-    color: @light-green;
+    color: @light-cyan;
 }
 
 #tray menu {
@@ -95,6 +96,7 @@ tooltip label {
     color: @light-cyan;
 }
 
-#waybar:not(.empty) #window {
-    background: @float;
+#custom-blue-light-filter {
+    color: @light-green;
+    font-size: 20px;
 }

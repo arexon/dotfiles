@@ -5,7 +5,13 @@
     "spacing": 8,
     "modules-left": ["clock"],
     "modules-center": ["hyprland/workspaces"],
-    "modules-right": ["tray", "temperature", "cpu", "pulseaudio"],
+    "modules-right": [
+        "tray",
+        "custom/blue-light-filter",
+        "temperature",
+        "cpu",
+        "pulseaudio"
+    ],
     "hyprland/workspaces": {
         "format": "{icon}",
         "format-icons": {
@@ -48,5 +54,11 @@
         "hwmon-path-abs": "/sys/devices/platform/coretemp.0/hwmon",
         "input-filename": "temp1_input",
         "interval": 2
+    },
+    "custom/blue-light-filter": {
+        "format": " ",
+        "on-click": "hyprctl keyword decoration:screen_shader ~/.config/hypr/shaders/blue-light-filter.glsl",
+        "on-click-right": "hyprctl keyword decoration:screen_shader [[EMPTY]]",
+        "tooltip": false
     }
 }
