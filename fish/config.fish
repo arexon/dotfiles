@@ -3,6 +3,8 @@ source ~/.keychain/falcon-fish
 
 alias hx helix
 alias zj zellij
+alias ls exa
+alias ll "exa -la"
 
 set -x EDITOR helix
 set -g fish_greeting
