@@ -1,6 +1,9 @@
 [shell]
 program = "/usr/bin/zellij"
-args = ["attach", "--create", "alacritty", "options", "--default-shell", "fish"]
+args = ["attach", "--create", "main", "options", "--default-shell", "fish"]
+
+[window]
+dynamic_padding = true
 
 [mouse]
 hide_when_typing = true
