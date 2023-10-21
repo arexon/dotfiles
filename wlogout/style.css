@@ -1,0 +1,31 @@
+window {
+    background-color: rgba(41, 37, 34, 0.75);
+}
+
+button {
+    border: none;
+    outline-style: none;
+    margin: 148px 24px;
+    border-radius: 24px;
+    font-size: 256px;
+    color: rgba(193, 167, 142, 1);
+    background: transparent;
+}
+
+button:hover {
+    color: rgba(236, 225, 215, 1);
+    background-color: rgba(64, 58, 54, 0.5);
+}
+
+#shutdown {
+    padding-right: 64px;
+}
+#reboot {
+    padding-right: 86px;
+}
+#suspend {
+    padding-right: 94px;
+}
+#hibernate {
+    padding-right: 74px;
+}

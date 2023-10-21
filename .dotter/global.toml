@@ -24,3 +24,6 @@
 
 [tofi.files]
 "tofi/" = "~/.config/tofi/"
+
+[wlogout.files]
+"wlogout/" = "~/.config/wlogout/"
