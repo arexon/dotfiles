@@ -1,38 +1,22 @@
 layout {
     default_tab_template {
         children
-        pane size=1 borderless=true {
+        pane size=1 {
             plugin location="file:~/.config/zellij/plugins/zjstatus.wasm" {
-                format_left "{mode} {tabs}"
+                format_left "#[fg=7] {mode} {tabs}"
                 format_space ""
                 format_right ""
 
-                hide_frame_for_single_pane "true"
+                hide_frame_for_single_pane "false"
 
-                mode_normal "#[fg=black,bg=cyan,bold] {session} "
-                mode_pane "#[fg=black,bg=magenta,bold] {session} "
-                mode_tab "#[fg=black,bg=magenta,bold] {session} "
-                mode_resize "#[fg=black,bg=magenta,bold] {session} "
-                mode_move "#[fg=black,bg=magenta,bold] {session} "
-                mode_scroll "#[fg=black,bg=magenta,bold] {session} "
-                mode_search "#[fg=black,bg=magenta,bold] {session} "
-                mode_entersearch "#[fg=black,bg=magenta,bold] {session} "
+                mode_normal "{session} /"
+                mode_tmux "{session} -"
+                mode_rename_tab "{session} r"
 
-                tab_normal "#[fg=white] {name} "
-                tab_active "#[fg=yellow,bold,italic] {name} "
+                tab_normal "#[fg=8]{name}  "
+                tab_active "#[fg=7]{name}* "
             }
         }
     }
-    tab name="helix" focus=true {
-        pane command="helix"
-    }
-    tab name="terminal" {
-        pane
-    }
-    tab name="yazi" {
-        pane command="yazi"
-    }
-    tab name="git" {
-        pane command="gitui"
-    }
+    tab name="shell" {}
 }

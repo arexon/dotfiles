@@ -4,7 +4,7 @@ keybinds {
     }
 
     tmux clear-defaults=true {
-        bind ";" { SwitchToMode "Normal"; }
+        bind "[" { SwitchToMode "Normal"; }
 
         bind "x" { Quit; }
         bind "d" { Detach; }
@@ -21,7 +21,6 @@ keybinds {
         bind "H" { Resize "Left"; }
         bind "q" { CloseFocus; SwitchToMode "Normal"; }
         bind "z" { ToggleFocusFullscreen; SwitchToMode "Normal"; }
-        bind "f" { ToggleFloatingPanes; }
 
         bind "t" { NewTab; SwitchToMode "RenameTab"; }
         bind "n" { GoToNextTab; SwitchToMode "Normal"; }
@@ -43,7 +42,7 @@ keybinds {
 
     renametab clear-defaults=true {
         bind "Enter" { SwitchToMode "Normal"; }
-        bind "Alt [" { UndoRenameTab; SwitchToMode "normal"; }   
+        bind "[" { UndoRenameTab; SwitchToMode "normal"; }   
     }
 
     pane clear-defaults=true {}
